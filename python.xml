@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="python">
+  <snippet>
+    <text><![CDATA[class ${1:modelName} (models.Model):
+    """${1:modelName} model docstring"""
+	
+    $0]]></text>
+    <tag>djmodel</tag>
+    <description>Django Model Class</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[class ${1:ModelName}Admin(admin.ModelAdmin):
+    list_display = ( .. fields .. )
+
+    admin.site.register(${1:ModelName}, ${1:ModelName}Admin)]]></text>
+    <tag>djadmin</tag>
+    <description>Model Admin class</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[return HttpResponseRedirect(reverse('${1:viewName}'))]]></text>
+    <tag>djredirect</tag>
+    <description>Django Http redirect using a reverse url</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[def ${1:viewName}(request):
+
+    return render_to_response('${2:templateName}', { context_data }, context_instance=RequestContext(request))]]></text>
+    <tag>djview</tag>
+    <description>Django view</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[def save(self):
+    # ...
+    
+    super(${1:modelName}, self).save()]]></text>
+    <tag>djsave</tag>
+    <description>Django model save() override</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.AutoField()]]></text>
+    <tag>djauto</tag>
+    <description>Django Model AutoField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.BooleanField()]]></text>
+    <tag>djbool</tag>
+    <description>Django Model BooleanField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.CharField(max_length=${2:maxLength})]]></text>
+    <tag>djchar</tag>
+    <description>Django Model CharField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.CommaSeparatedIntegerField()]]></text>
+    <tag>djcsif</tag>
+    <description>Django Model CommaSeparatedIntegerField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.DateField()]]></text>
+    <tag>djdate</tag>
+    <description>Django Model DateField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.DateTimeField()]]></text>
+    <tag>djdatetime</tag>
+    <description>Django Model DateTimeField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.EmailField()]]></text>
+    <tag>djemail</tag>
+    <description>Django Model EmailField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.FileField(upload_to=${2:path})]]></text>
+    <tag>djfile</tag>
+    <description>Django Model FileField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.FilePathField(path=${2:path})]]></text>
+    <tag>djfilepath</tag>
+    <description>Django Model FilePathField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.FloatField(max_digits=${2:value}, decimal_places=${3:value})]]></text>
+    <tag>djfloat</tag>
+    <description>Django Model FloatField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.ForeignKey(${2:model})]]></text>
+    <tag>djfk</tag>
+    <description>Django Model Foreign Key</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.ImageField()]]></text>
+    <tag>djimage</tag>
+    <description>Django Model ImageField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.IntegerField()]]></text>
+    <tag>djint</tag>
+    <description>Django Model IntegerField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.IPAddressField()]]></text>
+    <tag>djip</tag>
+    <description>Django Model IPAddressField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.ManyToManyField(${2:model})]]></text>
+    <tag>djmtm</tag>
+    <description>Django Model Many to Many</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.NullBooleanField()]]></text>
+    <tag>djnull</tag>
+    <description>Django Model NullBooleanField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.PhoneNumberField()]]></text>
+    <tag>djphone</tag>
+    <description>Django Model PhoneNumberField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.PositiveSmallIntegerField()]]></text>
+    <tag>djpossmallint</tag>
+    <description>Django Model PositiveSmallIntegerField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.SlugField()]]></text>
+    <tag>djslug</tag>
+    <description>Django Model SlugField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.SmallIntegerField()]]></text>
+    <tag>djsmallint</tag>
+    <description>Django Model SmallIntegerField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.TextField()]]></text>
+    <tag>djtext</tag>
+    <description>Django Model TextField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.TimeField()]]></text>
+    <tag>djtime</tag>
+    <description>Django Model TimeField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.URLField()]]></text>
+    <tag>djurl</tag>
+    <description>Django Model URLField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.USStateField()]]></text>
+    <tag>djuss</tag>
+    <description>Django Model USStateField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.XMLField()]]></text>
+    <tag>djxml</tag>
+    <description>Django Model XMLField</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.PositiveIntegerField()]]></text>
+    <tag>djposint</tag>
+    <description>Django PositiveIntegerField</description>
+  </snippet>
+</snippets>
