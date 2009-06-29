@@ -1,0 +1,16 @@
+This is a snippet file with Django 1.x tags to be used with the Gedit Snippets plugin. Currently it includes:
+
+* The 26 model field types
+* Some custom tags:
+    * djmodel (model class)
+    * djadmin (admin model class)
+    * djredirect (redirect response)
+    * djview (view function)
+    * djsave (model save() override) 
+    
+Read the INSTALL file for installing instructions.
+    
+If you find errors or have suggestions for tags to be included in this snippet just send me 
+an email to marcelor at gmail.com or just create an issue ticket here in GitHub.
+
+Thanks to Paolo Ferretti (http://www.paoloferretti.it) for the initial work!
