@@ -1,4 +1,4 @@
-This is a snippet file with Django 1.x tags to be used with the Gedit Snippets plugin. Currently it includes:
+This is a snippet file with Django 1.x snippets to be used with the Gedit Snippets plugin. Currently it includes:
 
 * The 26 model field types
 * Some snippets for common code patterns:
@@ -10,7 +10,7 @@ This is a snippet file with Django 1.x tags to be used with the Gedit Snippets p
     
 Read the INSTALL file for installing instructions.
     
-If you find errors or have suggestions for tags to be included in this snippet send me 
+If you find errors or have suggestions for snippets to be included in the file send me 
 an email to marcelor at gmail.com or just create an issue ticket here in GitHub.
 
 Thanks to Paolo Ferretti (http://www.paoloferretti.it) for the initial work!
