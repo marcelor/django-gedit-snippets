@@ -12,7 +12,7 @@
     <text><![CDATA[class ${1:ModelName}Admin(admin.ModelAdmin):
     list_display = ( .. fields .. )
 
-    admin.site.register(${1:ModelName}, ${1:ModelName}Admin)]]></text>
+admin.site.register(${1:ModelName}, ${1:ModelName}Admin)]]></text>
     <tag>djadmin</tag>
     <description>Model Admin class</description>
   </snippet>
@@ -52,7 +52,7 @@
     <description>Django Model CharField</description>
   </snippet>
   <snippet>
-    <text><![CDATA[${1:fieldName} = models.CommaSeparatedIntegerField()]]></text>
+    <text><![CDATA[${1:fieldName} = models.CommaSeparatedIntegerField(max_length=${2:maxLength})]]></text>
     <tag>djcsif</tag>
     <description>Django Model CommaSeparatedIntegerField</description>
   </snippet>
@@ -66,6 +66,11 @@
     <tag>djdatetime</tag>
     <description>Django Model DateTimeField</description>
   </snippet>
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.DecimalField(max_digits=${2:value}, decimal_places=${3:value})]]></text>
+    <tag>djdecimal</tag>
+    <description>Django Model DecimalField</description>
+  </snippet>  
   <snippet>
     <text><![CDATA[${1:fieldName} = models.EmailField()]]></text>
     <tag>djemail</tag>
@@ -117,10 +122,16 @@
     <description>Django Model NullBooleanField</description>
   </snippet>
   <snippet>
-    <text><![CDATA[${1:fieldName} = models.PhoneNumberField()]]></text>
-    <tag>djphone</tag>
-    <description>Django Model PhoneNumberField</description>
+    <text><![CDATA[${1:fieldName} = models.OneToOneField(${2:model})]]></text>
+    <tag>djoto</tag>
+    <description>Django Model One to One</description>
+  </snippet>  
+  <snippet>
+    <text><![CDATA[${1:fieldName} = models.PositiveIntegerField()]]></text>
+    <tag>djposint</tag>
+    <description>Django Model PositiveIntegerField</description>
   </snippet>
+  </snippets>  
   <snippet>
     <text><![CDATA[${1:fieldName} = models.PositiveSmallIntegerField()]]></text>
     <tag>djpossmallint</tag>
@@ -152,18 +163,7 @@
     <description>Django Model URLField</description>
   </snippet>
   <snippet>
-    <text><![CDATA[${1:fieldName} = models.USStateField()]]></text>
-    <tag>djuss</tag>
-    <description>Django Model USStateField</description>
-  </snippet>
-  <snippet>
-    <text><![CDATA[${1:fieldName} = models.XMLField()]]></text>
+    <text><![CDATA[${1:fieldName} = models.XMLField(upload_to=${2:schema_path})]]></text>
     <tag>djxml</tag>
     <description>Django Model XMLField</description>
   </snippet>
-  <snippet>
-    <text><![CDATA[${1:fieldName} = models.PositiveIntegerField()]]></text>
-    <tag>djposint</tag>
-    <description>Django PositiveIntegerField</description>
-  </snippet>
-</snippets>

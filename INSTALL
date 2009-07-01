@@ -1,6 +1,7 @@
 * Open gedit
-* Install and activate the snippets plugin (if you didn’t before)
-* Go to tools -> manage snippets
+* Install and activate the snippets plugin [1] (if you didn’t before)
+* Go to Tools -> Manage snippets
 * Click on the import button and select the file python.xml
 * Now you should see the new Django snippets
 
+[1] http://live.gnome.org/Gedit/Plugins/Snippets
