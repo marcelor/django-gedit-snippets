@@ -131,7 +131,6 @@ admin.site.register(${1:ModelName}, ${1:ModelName}Admin)]]></text>
     <tag>djposint</tag>
     <description>Django Model PositiveIntegerField</description>
   </snippet>
-  </snippets>  
   <snippet>
     <text><![CDATA[${1:fieldName} = models.PositiveSmallIntegerField()]]></text>
     <tag>djpossmallint</tag>
