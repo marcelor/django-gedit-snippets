@@ -97,7 +97,7 @@ admin.site.register(${1:ModelName}, ${1:ModelName}Admin)]]></text>
     <description>Django Model Foreign Key</description>
   </snippet>
   <snippet>
-    <text><![CDATA[${1:fieldName} = models.ImageField()]]></text>
+    <text><![CDATA[${1:fieldName} = models.ImageField(upload_to=${2:path})]]></text>
     <tag>djimage</tag>
     <description>Django Model ImageField</description>
   </snippet>
